@@ -1,0 +1,79 @@
+body {
+  margin: 0 auto
+}
+
+a {
+  justify-content: space-between;
+  text-decoration: none;
+  color: white
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.Portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("./assets/dna-background.jpeg");
+  background-size: cover;
+}
+
+.Navbar {
+  background-color: black;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  height: 80px;
+  z-index: 1000;
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
+  color: white;
+}
+
+.NavbarContent {
+  max-width: 900px;
+  padding: 0rem 3rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  color: white
+}
+
+.NavbarItem {
+  display: inline;
+  margin-left: 2rem;
+  color: white;
+}
+
+.NavbarItem:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.ProjectItem img {
+  max-width: 50vw;
+}
+.SectionContent {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-left: 22rem;
+  padding: 40px;
+  color: white;
+  font-size:x-large;
+}
+
+.email-link:hover {
+  cursor: pointer;
+}
+
+.AboutSection, .ContactSection{
+  height: 90vh
+}
+
