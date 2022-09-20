@@ -24,11 +24,13 @@ const ProjectsSection = ({ id }) => {
         <div className="ProjectsSectionContainer">
           <div className="ProjectItem">
             <h2>Rabido</h2>
-            <a href="https://powerful-retreat-33440.herokuapp.com/feed">
-              Live Site
-            </a>
-            <a href="https://github.com/phicov/Rabido">GitHub Repo</a>
-            <br></br>
+            <div className="ProjectLinks">
+              <a href="https://powerful-retreat-33440.herokuapp.com/feed">
+                Live Site
+              </a>
+              <a href="https://github.com/phicov/Rabido">GitHub Repo</a>
+              <br></br>
+            </div>
             <img src={rabidoFeed} alt="rabido-feed" />
             <img src={rabidoCategories} alt="rabido-categories" />
             <h4>
@@ -47,11 +49,13 @@ const ProjectsSection = ({ id }) => {
 
           <div className="ProjectItem">
             <h2>Promoto</h2>
-            <a href="https://mighty-dusk-67064.herokuapp.com/promoto">
-              Live Site
-            </a>
-            <a href="https://github.com/austinndo/promoto">GitHub Repo</a>
-            <br></br>
+            <div className="ProjectLinks">
+              <a href="https://mighty-dusk-67064.herokuapp.com/promoto">
+                Live Site
+              </a>
+              <a href="https://github.com/austinndo/promoto">GitHub Repo</a>
+              <br></br>
+            </div>
             <img src={promotoLanding} alt="promoto-landing" />
             <img src={promotoFeed} alt="promoto-feed" />
             <img src={promotoForm} alt="promoto-form" />
@@ -71,11 +75,13 @@ const ProjectsSection = ({ id }) => {
 
           <div className="ProjectItem">
             <h2>Sustainable Seafood</h2>
-            <a href="https://sustainable_seafood.surge.sh/">Live Site</a>
-            <a href="https://github.com/austinndo/sustainable_seafood">
-              GitHub Repo
-            </a>
-            <br></br>
+            <div className="ProjectLinks">
+              <a href="https://sustainable_seafood.surge.sh/">Live Site</a>
+              <a href="https://github.com/austinndo/sustainable_seafood">
+                GitHub Repo
+              </a>
+              <br></br>
+            </div>
             <img src={seafoodSearch} alt="sustainable-seafood-search" />
             <img src={seafoodList} alt="sustainable-seafood-list" />
             <h4>

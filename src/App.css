@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 body {
   margin: 0 auto
 }
@@ -22,6 +24,7 @@ ul {
   justify-content: center;
   background-image: url("./assets/dna-background.jpeg");
   background-size: cover;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .Navbar {
@@ -60,6 +63,13 @@ ul {
 .ProjectItem img {
   max-width: 50vw;
 }
+
+.ProjectLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .SectionContent {
   max-width: 800px;
   margin: 0 auto;
