@@ -17,12 +17,20 @@ const ContactSection = ({ id }) => {
         <h3>Socials:</h3>
         <ul>
           <li>
-            <a href="www.linkedin.com/in/austin-do">
+            <a
+              href="https://www.linkedin.com/in/austin-do/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <LinkedinOriginalIcon /> LinkedIn
             </a>
           </li>
           <li>
-            <a href="https://github.com/austinndo">
+            <a
+              href="https://github.com/austinndo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <GithubOriginalIcon /> GitHub
             </a>
           </li>
