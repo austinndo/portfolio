@@ -49,10 +49,20 @@ const ProjectsSection = ({ id }) => {
           </li>
         </ul>
         <div className="ProjectLinks">
-          <a href="https://powerful-retreat-33440.herokuapp.com/feed">
-            Live Site
+          <a
+            href="https://rabido.herokuapp.com/feed"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Rabido Live Site
           </a>
-          <a href="https://github.com/phicov/Rabido">GitHub Repo</a>
+          <a
+            href="https://github.com/phicov/Rabido"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub Repo
+          </a>
           <br></br>
         </div>
 
@@ -93,10 +103,20 @@ const ProjectsSection = ({ id }) => {
           </li>
         </ul>
         <div className="ProjectLinks">
-          <a href="https://mighty-dusk-67064.herokuapp.com/promoto">
+          <a
+            href="https://promoto.herokuapp.com/promoto"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Live Site
           </a>
-          <a href="https://github.com/austinndo/promoto">GitHub Repo</a>
+          <a
+            href="https://github.com/austinndo/promoto"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub Repo
+          </a>
           <br></br>
         </div>
 
@@ -131,8 +151,18 @@ const ProjectsSection = ({ id }) => {
           </li>
         </ul>
         <div className="ProjectLinks">
-          <a href="https://sustainable_seafood.surge.sh/">Live Site</a>
-          <a href="https://github.com/austinndo/sustainable_seafood">
+          <a
+            href="https://sustainable-seafood.surge.sh/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Live Site
+          </a>
+          <a
+            href="https://github.com/austinndo/sustainable_seafood"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             GitHub Repo
           </a>
           <br></br>
