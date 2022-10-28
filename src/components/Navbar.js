@@ -4,14 +4,17 @@ const Navbar = () => {
   return (
     <nav className="Navbar">
       <div className="NavbarContent">
-        <h3
+        <Link
           className="NavbarItem"
-          onClick={() => {
-            scroll.scrollToTop()
-          }}
+          activeClass="active"
+          to="IntroSection"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={280}
         >
           Austin Do
-        </h3>
+        </Link>
         <Link
           className="NavbarItem"
           activeClass="active"
@@ -19,7 +22,7 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           offset={-70}
-          duration={680}
+          duration={280}
         >
           About
         </Link>
@@ -30,7 +33,7 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           offset={-70}
-          duration={680}
+          duration={280}
         >
           Projects
         </Link>
@@ -41,7 +44,7 @@ const Navbar = () => {
           spy={true}
           smooth={true}
           offset={-70}
-          duration={680}
+          duration={280}
         >
           Contact
         </Link>
