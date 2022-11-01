@@ -23,7 +23,16 @@ ul {
 }
 
 .AboutSection, .ContactSection, .IntroSection, .ProjectsSection {
-  height: 90vh
+  height: 95vh
+}
+
+.SectionContent {
+  margin: 0 auto;
+  margin-left: 17vw;
+  margin-right: 8vw;
+  padding: 40px;
+  color: white;
+  font-size:x-large;
 }
 
 /********************  Navbar *********************/
@@ -62,10 +71,17 @@ ul {
   cursor: pointer;
 }
 
+/********************  Intro Section *********************/
+.IntroParagraph {
+  margin-top: 8vh;
+  font-size: 1.6vw;
+}
+
+
 /********************  About Section *********************/
 
 .AboutSection p {
-  font-size: 1.8vw;
+  font-size: 1.6vw;
 }
 
 .AboutSection span {
@@ -104,7 +120,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 auto;
+  margin-right: 6vw;
 }
 
 /********************  Projects *********************/
@@ -117,14 +133,6 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.SectionContent {
-  margin: 0 auto;
-  margin-left: 17vw;
-  padding: 40px;
-  color: white;
-  font-size:x-large;
 }
 
 .email-link:hover {
