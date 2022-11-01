@@ -22,6 +22,12 @@ ul {
   font-family: 'Montserrat', sans-serif;
 }
 
+.AboutSection, .ContactSection, .IntroSection, .ProjectsSection {
+  height: 90vh
+}
+
+/********************  Navbar *********************/
+
 .Navbar {
   background-color: black;
   position: sticky;
@@ -56,36 +62,52 @@ ul {
   cursor: pointer;
 }
 
-.AboutSection, .ContactSection, .IntroSection, .ProjectsSection {
-  height: 90vh
+/********************  About Section *********************/
+
+.AboutSection p {
+  font-size: 1.8vw;
 }
 
-.AboutContainer {
-  display: flex;
-  flex-direction: column;
+.AboutSection span {
+  font-weight: bold;
 }
 
-.AboutOne {
+.AboutSplitOne {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  margin-top: 8vh;
 }
 
-.AboutTextOne, .AboutImageOne {
-  width: 30vw;
+.AboutImageContainer {
+  width: 50%;
 }
 
-.AboutImageOne {
+.AboutImage {
   display: flex;
   justify-content: center;
 }
 
-.AboutImageOne img {
-  background-size: cover;
+.AboutImage img {
+  width: clamp(100px, 200px, 300px);
+  border: solid black;
+  border-width: 1vh;
+  box-shadow: 20px 20px 20px 20px blanchedalmond;
 }
 
-.AboutContainer span {
-  font-weight: bold;
+
+.AboutParagraphOne {
+  width: 50%;
 }
+
+.AboutSplitTwo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/********************  Projects *********************/
 
 .ProjectsSection img {
   max-width: 30vw;
@@ -108,64 +130,3 @@ ul {
 .email-link:hover {
   cursor: pointer;
 }
-
-
-/* .DNAvbar {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.DNAIcon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 40vh 0 0 30vw;
-  transform: rotate(90deg) scale(50);
-}
-
-.forStrandA {
-  height: 50vh;
-  width: 30vw;
-  border-right: solid black;
-  border-radius: 89% 11% 27% 73% / 30% 47% 53% 70%;
-  border-width: 1vw;
-  margin-top: -5vh;
-  margin-left: -13vw;
-}
-
-.forStrandB {
-  height: 50vh;
-  width: 30vw;
-  border-right: solid black;
-  border-radius: 89% 11% 27% 73% / 30% 47% 53% 70%;
-  border-width: 1vw;
-  margin-top: -0.8vh;
-  margin-left: 3vw;
-  transform: rotate(180deg);
-}
-
-.revStrandA {
-  position: absolute;
-  height: 50vh;
-  width: 30vw;
-  border-right: solid black;
-  border-radius: 89% 11% 27% 73% / 30% 47% 53% 70%;
-  border-width: 1vw;
-  margin-top: 0vh;
-  margin-left: 2vw;
-  transform: rotate(135deg);
-}
-
-.revStrandB {
-  position: absolute;
-  height: 50vh;
-  width: 30vw;
-  border-right: solid black;
-  border-radius: 89% 11% 27% 73% / 30% 47% 53% 70%;
-  border-width: 1vw;
-  margin-left: 2vw;
-  transform: rotate(180deg);
-} */
-
-
