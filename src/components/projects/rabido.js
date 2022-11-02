@@ -28,7 +28,7 @@ const Rabido = () => {
           </div>
           <img
             src={rabidoSlide === 'first' ? rabidoFeed : rabidoCategories}
-            alt="rabido-feed"
+            alt="rabido-project image"
           />
           <div>
             <FaChevronRight
@@ -56,35 +56,35 @@ const Rabido = () => {
             <GoPrimitiveDot />
           </div>
         </div>
-        <p>
-          Website that connects freelancers offering a variety of services with
-          businesses and individuals.{' '}
-        </p>
-        <h3>Tech Used:</h3>
-        <ul>
-          <li>
-            <ReactOriginalIcon /> <PostgresqlOriginalIcon />{' '}
-            <ExpressOriginalIcon />
-            <NodejsOriginalIcon />
-          </li>
-        </ul>
-        <div className="ProjectLinks">
-          <a
-            href="https://rabido.herokuapp.com/feed"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Rabido Live Site
-          </a>
-          <a
-            href="https://github.com/phicov/Rabido"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub Repo
-          </a>
-          <br></br>
-        </div>
+      </div>
+      <p>
+        Website that connects freelancers offering a variety of services with
+        businesses and individuals.{' '}
+      </p>
+      <h3>Tech Used:</h3>
+      <ul>
+        <li>
+          <ReactOriginalIcon /> <PostgresqlOriginalIcon />{' '}
+          <ExpressOriginalIcon />
+          <NodejsOriginalIcon />
+        </li>
+      </ul>
+      <div className="ProjectLinks">
+        <a
+          href="https://rabido.herokuapp.com/feed"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Rabido Live Site
+        </a>
+        <a
+          href="https://github.com/phicov/Rabido"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub Repo
+        </a>
+        <br></br>
       </div>
     </div>
   )

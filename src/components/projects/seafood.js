@@ -5,6 +5,8 @@ import {
   Css3OriginalIcon,
   JavascriptOriginalIcon
 } from 'react-devicons'
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
+import { GoPrimitiveDot } from 'react-icons/go'
 import { useState } from 'react'
 
 const Seafood = () => {
@@ -13,10 +15,47 @@ const Seafood = () => {
   return (
     <div>
       <h2>Sustainable Seafood</h2>
+      <div className="CarouselContainer">
+        <div className="MyCarousel">
+          <div>
+            <FaChevronLeft
+              className="LeftCarouselArrow"
+              onClick={() => {
+                setSeafoodSlide('first')
+              }}
+            />
+          </div>
+          <img
+            src={seafoodSlide === 'first' ? seafoodSearch : seafoodList}
+            alt="seafood-project image"
+          />
+          <div>
+            <FaChevronRight
+              className="RightCarouselArrow"
+              onClick={() => {
+                setSeafoodSlide('second')
+              }}
+            />
+          </div>
+        </div>
+        <div className="ProjectImageIndicator">
+          <div
+            className={
+              seafoodSlide === 'first' ? 'CarouselImageOn' : 'CarouselImageOff'
+            }
+          >
+            <GoPrimitiveDot />
+          </div>
 
-      <img src={seafoodSearch} alt="sustainable-seafood-search" />
-
-      <img src={seafoodList} alt="sustainable-seafood-list" />
+          <div
+            className={
+              seafoodSlide === 'first' ? 'CarouselImageOff' : 'CarouselImageOn'
+            }
+          >
+            <GoPrimitiveDot />
+          </div>
+        </div>
+      </div>
 
       <p>
         Utilizing the fishwatch API to present data on different species of fish

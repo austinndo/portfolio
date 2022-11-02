@@ -22,7 +22,7 @@ ul {
   font-family: 'Montserrat', sans-serif;
 }
 
-.AboutSection, .ContactSection, .IntroSection, .ProjectsSection {
+.AboutSection, .ContactSection, .IntroSection {
   height: 95vh
 }
 
