@@ -16,15 +16,11 @@ const Promoto = () => {
     <div>
       <h2>Promoto</h2>
 
-      <img
-        className="d-block w-100"
-        src={promotoLanding}
-        alt="promoto-landing"
-      />
+      <img src={promotoLanding} alt="promoto-landing" />
 
-      <img className="d-block w-100" src={promotoFeed} alt="promoto-feed" />
+      <img src={promotoFeed} alt="promoto-feed" />
 
-      <img className="d-block w-100" src={promotoForm} alt="promoto-form" />
+      <img src={promotoForm} alt="promoto-form" />
 
       <p>
         Full-stack MERN app that allows users to share and post content about

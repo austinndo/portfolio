@@ -130,6 +130,19 @@ ul {
   max-width: 30vw;
 }
 
+.CarouselContainer {
+
+}
+
+.MyCarousel {
+  display: flex;
+  flex-direction: row;
+}
+
+.CarouselImageOff {
+  opacity: 0.5;
+}
+
 .ProjectLinks {
   display: flex;
   flex-direction: row;

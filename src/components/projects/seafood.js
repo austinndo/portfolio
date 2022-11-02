@@ -14,17 +14,9 @@ const Seafood = () => {
     <div>
       <h2>Sustainable Seafood</h2>
 
-      <img
-        className="d-block w-100"
-        src={seafoodSearch}
-        alt="sustainable-seafood-search"
-      />
+      <img src={seafoodSearch} alt="sustainable-seafood-search" />
 
-      <img
-        className="d-block w-100"
-        src={seafoodList}
-        alt="sustainable-seafood-list"
-      />
+      <img src={seafoodList} alt="sustainable-seafood-list" />
 
       <p>
         Utilizing the fishwatch API to present data on different species of fish
