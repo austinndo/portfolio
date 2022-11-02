@@ -139,6 +139,15 @@ ul {
   flex-direction: row;
 }
 
+.LeftCarouselArrow, .RightCarouselArrow {
+  cursor: pointer;
+}
+
+.ProjectImageIndicator {
+  display: flex;
+  flex-direction: row;
+}
+
 .CarouselImageOff {
   opacity: 0.5;
 }

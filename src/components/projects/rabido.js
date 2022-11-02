@@ -18,15 +18,25 @@ const Rabido = () => {
       <h2>Rabido</h2>
       <div className="CarouselContainer">
         <div className="MyCarousel">
-          <div className="LeftCarouselArrow">
-            <FaChevronLeft />
+          <div>
+            <FaChevronLeft
+              className="LeftCarouselArrow"
+              onClick={() => {
+                setRabidoSlide('first')
+              }}
+            />
           </div>
           <img
             src={rabidoSlide === 'first' ? rabidoFeed : rabidoCategories}
             alt="rabido-feed"
           />
-          <div className="RightCarouselArrow">
-            <FaChevronRight />
+          <div>
+            <FaChevronRight
+              className="RightCarouselArrow"
+              onClick={() => {
+                setRabidoSlide('second')
+              }}
+            />
           </div>
         </div>
         <div className="ProjectImageIndicator">
