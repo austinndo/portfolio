@@ -27,7 +27,7 @@ const Seafood = () => {
           </div>
           <img
             src={seafoodSlide === 'first' ? seafoodSearch : seafoodList}
-            alt="seafood-project image"
+            alt="seafood-project"
           />
           <div>
             <FaChevronRight

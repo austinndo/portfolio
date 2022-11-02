@@ -28,7 +28,7 @@ const Rabido = () => {
           </div>
           <img
             src={rabidoSlide === 'first' ? rabidoFeed : rabidoCategories}
-            alt="rabido-project image"
+            alt="rabido-project"
           />
           <div>
             <FaChevronRight

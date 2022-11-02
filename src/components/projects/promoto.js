@@ -14,37 +14,6 @@ import { useState } from 'react'
 const Promoto = () => {
   const [promotoSlide, setPromotoSlide] = useState('first')
 
-  const carouselLeftSwitch = (promotoSlide) => {
-    switch (promotoSlide) {
-      case 'first':
-        break
-      case 'second':
-        setPromotoSlide('first')
-        break
-      case 'third':
-        setPromotoSlide('second')
-        break
-      default:
-        break
-    }
-  }
-
-  const carouselRightSwitch = (promotoSlide) => {
-    switch (promotoSlide) {
-      case 'first':
-        setPromotoSlide('second')
-        console.log('setting to second')
-        break
-      case 'second':
-        setPromotoSlide('third')
-        break
-      case 'third':
-        break
-      default:
-        break
-    }
-  }
-
   return (
     <div>
       <h2>Promoto</h2>
@@ -71,7 +40,7 @@ const Promoto = () => {
                 ? promotoFeed
                 : promotoForm
             }
-            alt="promoto-project image"
+            alt="promoto-project"
           />
           <div>
             <FaChevronRight
