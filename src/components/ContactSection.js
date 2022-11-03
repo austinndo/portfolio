@@ -15,14 +15,14 @@ const ContactSection = ({ id }) => {
           austinndo@gmail.com
         </h4>
         <h3>Socials:</h3>
-        <ul>
+        <ul className="ContactLinks">
           <li>
             <a
               href="https://www.linkedin.com/in/austin-do/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <LinkedinOriginalIcon /> LinkedIn
+              <LinkedinOriginalIcon />
             </a>
           </li>
           <li>
@@ -31,7 +31,7 @@ const ContactSection = ({ id }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <GithubOriginalIcon /> GitHub
+              <GithubOriginalIcon />
             </a>
           </li>
         </ul>

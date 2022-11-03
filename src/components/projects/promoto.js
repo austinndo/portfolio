@@ -16,7 +16,7 @@ const Promoto = () => {
   const [promotoSlide, setPromotoSlide] = useState('first')
 
   return (
-    <div>
+    <div className="ProjectComponent">
       <h2 className="ProjectTitle">Promoto</h2>
       <div div className="ProjectPicAndParaContainer">
         <p className="ProjectDescriptionB">
@@ -94,17 +94,17 @@ const Promoto = () => {
         </div>
       </div>
       <div className="ProjectTechandLinks">
-        <div>
-          <h4 className="ProjectTechTitle">Tech Used:</h4>
+        <div className="ProjectTech">
+          <h5 className="ProjectTechTitle">Tech Used:</h5>
           <ul>
-            <li className="ProjectDevIcons">
+            <li className="ProjectDevIconsB">
               <ReactOriginalIcon /> <MongodbOriginalIcon />
               <ExpressOriginalIcon />
               <NodejsOriginalIcon />
             </li>
           </ul>
         </div>
-        <div className="ProjectLinks">
+        <div className="ProjectLinksB">
           <a
             href="https://promoto.herokuapp.com/promoto"
             target="_blank"
@@ -121,6 +121,7 @@ const Promoto = () => {
           </a>
         </div>
       </div>
+      <div className="ProjectDivider"></div>
     </div>
   )
 }

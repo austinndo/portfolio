@@ -15,7 +15,7 @@ const Rabido = () => {
   const [rabidoSlide, setRabidoSlide] = useState('first')
 
   return (
-    <div>
+    <div className="ProjectComponent">
       <h2 className="ProjectTitle">Rabido</h2>
       <div div className="ProjectPicAndParaContainer">
         <div className="CarouselContainer">
@@ -64,8 +64,9 @@ const Rabido = () => {
           businesses and individuals.{' '}
         </p>
       </div>
+
       <div className="ProjectTechandLinks">
-        <div className="ProjectLinks">
+        <div className="ProjectLinksA">
           <a
             href="https://rabido.herokuapp.com/feed"
             target="_blank"
@@ -81,10 +82,10 @@ const Rabido = () => {
             GitHub Repo <MdOutlineLaunch />
           </a>
         </div>
-        <div>
-          <h4 className="ProjectTechTitle">Tech Used:</h4>
+        <div className="ProjectTech">
+          <h5 className="ProjectTechTitle">Tech Used:</h5>
           <ul>
-            <li className="ProjectDevIcons">
+            <li className="ProjectDevIconsA">
               <ReactOriginalIcon /> <PostgresqlOriginalIcon />{' '}
               <ExpressOriginalIcon />
               <NodejsOriginalIcon />
@@ -92,6 +93,7 @@ const Rabido = () => {
           </ul>
         </div>
       </div>
+      <div className="ProjectDivider"></div>
     </div>
   )
 }

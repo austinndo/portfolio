@@ -78,14 +78,14 @@ ul {
 
 .IntroParagraph {
   margin-top: 8vh;
-  font-size: 1.6vw;
+  font-size: 2.8vh;
 }
 
 
 /********************  About Section *********************/
 
 .AboutSection p {
-  font-size: 1.6vw;
+  font-size: 2.5vh;
 }
 
 .AboutSection span {
@@ -135,22 +135,25 @@ ul {
 
 .ProjectTitle {
   margin-top: 8vh;
-  margin-bottom: 4vh;
+  margin-bottom: 6vh;
 }
 
 .ProjectPicAndParaContainer {
   display: flex;
   flex-direction: row;
+  min-height: 300px;
 }
 
 .ProjectDescriptionA {
   margin-left: 4vw;
   max-width: 800px;
+  font-size: 2.8vh;
 }
 
 .ProjectDescriptionB {
   margin-right: 4vw;
-  max-width: 800px
+  max-width: 800px;
+  font-size: 2.8vh;
 }
 
 .CarouselContainer {
@@ -164,7 +167,7 @@ ul {
 }
 
 .MyCarousel img {
-  max-width: 300px;
+  min-height: 200px;
   max-height: 300px;
 }
 
@@ -173,8 +176,14 @@ ul {
   align-items: center;
 }
 
-.LeftCarouselArrow, .RightCarouselArrow {
+.LeftCarouselArrow {
   cursor: pointer;
+  margin-right: 2vw;
+}
+
+.RightCarouselArrow {
+  cursor: pointer;
+  margin-left: 2vw;
 }
 
 .ProjectImageIndicator {
@@ -191,38 +200,89 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 4vh;
 }
 
 .ProjectTechTitle {
-  margin-top: 4vh;
-  margin-bottom: 4vh;
+  margin-bottom: 2vh;
 }
 
-.ProjectDevIcons {
+.ProjectDevIconsA {
   width: 15vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-right: 4vw;
 }
 
-.ProjectLinks {
+.ProjectDevIconsB {
+  width: 15vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 4vw;
+}
+
+.ProjectLinksA {
   display: flex;
   flex-direction: column;
   max-width: 1000px;
+  font-size: 2.8vh;
+  margin-left: 3vw;
 }
 
-.ProjectLinks a {
+.ProjectLinksA a {
   text-decoration: none;
   color: white
 }
  
-.ProjectLinks a:hover {
+.ProjectLinksA a:hover {
   cursor: pointer;
   text-decoration: none;
   color: white
+}
+
+.ProjectLinksB {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  font-size: 2.8vh;
+  margin-right: 3vw;
+}
+
+.ProjectLinksB a {
+  text-decoration: none;
+  color: white
+}
+ 
+.ProjectLinksB a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: white
+}
+
+.ProjectDivider {
+  margin-top: 4vh;
+  width: 68vw;
+  height: 2vh;
+  border-bottom: solid white;
+  opacity: 0.50;
 }
 
 .email-link:hover {
   cursor: pointer;
   color: white;
+}
+
+/********************  Contact *********************/
+
+.ContactLinks a {
+  text-decoration: none;
+  color: white
+}
+ 
+.ContactLinks a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: white
 }

@@ -14,7 +14,7 @@ const Seafood = () => {
   const [seafoodSlide, setSeafoodSlide] = useState('first')
 
   return (
-    <div>
+    <div className="ProjectComponent">
       <h2 className="ProjectTitle">Sustainable Seafood</h2>
       <div div className="ProjectPicAndParaContainer">
         <div className="CarouselContainer">
@@ -70,7 +70,7 @@ const Seafood = () => {
         </p>
       </div>
       <div className="ProjectTechandLinks">
-        <div className="ProjectLinks">
+        <div className="ProjectLinksA">
           <a
             href="https://sustainable-seafood.surge.sh/"
             target="_blank"
@@ -86,10 +86,10 @@ const Seafood = () => {
             GitHub Repo <MdOutlineLaunch />
           </a>
         </div>
-        <div>
-          <h4 className="ProjectTechTitle">Tech Used:</h4>
+        <div className="ProjectTech">
+          <h5 className="ProjectTechTitle">Tech Used:</h5>
           <ul>
-            <li className="ProjectDevIcons">
+            <li className="ProjectDevIconsA">
               <JavascriptOriginalIcon /> <Html5OriginalIcon />{' '}
               <Css3OriginalIcon />
             </li>
