@@ -16,51 +16,53 @@ const Rabido = () => {
   return (
     <div>
       <h2>Rabido</h2>
-      <div className="CarouselContainer">
-        <div className="MyCarousel">
-          <div>
-            <FaChevronLeft
-              className="LeftCarouselArrow"
-              onClick={() => {
-                setRabidoSlide('first')
-              }}
+      <div div className="ProjectInfoContainer">
+        <div className="CarouselContainer">
+          <div className="MyCarousel">
+            <div className="CarouselArrowContainer">
+              <FaChevronLeft
+                className="LeftCarouselArrow"
+                onClick={() => {
+                  setRabidoSlide('first')
+                }}
+              />
+            </div>
+            <img
+              src={rabidoSlide === 'first' ? rabidoFeed : rabidoCategories}
+              alt="rabido-project"
             />
+            <div className="CarouselArrowContainer">
+              <FaChevronRight
+                className="RightCarouselArrow"
+                onClick={() => {
+                  setRabidoSlide('second')
+                }}
+              />
+            </div>
           </div>
-          <img
-            src={rabidoSlide === 'first' ? rabidoFeed : rabidoCategories}
-            alt="rabido-project"
-          />
-          <div>
-            <FaChevronRight
-              className="RightCarouselArrow"
-              onClick={() => {
-                setRabidoSlide('second')
-              }}
-            />
-          </div>
-        </div>
-        <div className="ProjectImageIndicator">
-          <div
-            className={
-              rabidoSlide === 'first' ? 'CarouselImageOn' : 'CarouselImageOff'
-            }
-          >
-            <GoPrimitiveDot />
-          </div>
+          <div className="ProjectImageIndicator">
+            <div
+              className={
+                rabidoSlide === 'first' ? 'CarouselImageOn' : 'CarouselImageOff'
+              }
+            >
+              <GoPrimitiveDot />
+            </div>
 
-          <div
-            className={
-              rabidoSlide === 'first' ? 'CarouselImageOff' : 'CarouselImageOn'
-            }
-          >
-            <GoPrimitiveDot />
+            <div
+              className={
+                rabidoSlide === 'first' ? 'CarouselImageOff' : 'CarouselImageOn'
+              }
+            >
+              <GoPrimitiveDot />
+            </div>
           </div>
         </div>
+        <p>
+          Website that connects freelancers offering a variety of services with
+          businesses and individuals.{' '}
+        </p>
       </div>
-      <p>
-        Website that connects freelancers offering a variety of services with
-        businesses and individuals.{' '}
-      </p>
       <h3>Tech Used:</h3>
       <ul>
         <li>
@@ -84,7 +86,6 @@ const Rabido = () => {
         >
           GitHub Repo
         </a>
-        <br></br>
       </div>
     </div>
   )

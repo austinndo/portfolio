@@ -15,52 +15,59 @@ const Seafood = () => {
   return (
     <div>
       <h2>Sustainable Seafood</h2>
-      <div className="CarouselContainer">
-        <div className="MyCarousel">
-          <div>
-            <FaChevronLeft
-              className="LeftCarouselArrow"
-              onClick={() => {
-                setSeafoodSlide('first')
-              }}
+      <div div className="ProjectInfoContainer">
+        <div className="CarouselContainer">
+          <div className="MyCarousel">
+            <div className="CarouselArrowContainer">
+              <FaChevronLeft
+                className="LeftCarouselArrow"
+                onClick={() => {
+                  setSeafoodSlide('first')
+                }}
+              />
+            </div>
+            <img
+              src={seafoodSlide === 'first' ? seafoodSearch : seafoodList}
+              alt="seafood-project"
             />
+            <div className="CarouselArrowContainer">
+              <FaChevronRight
+                className="RightCarouselArrow"
+                onClick={() => {
+                  setSeafoodSlide('second')
+                }}
+              />
+            </div>
           </div>
-          <img
-            src={seafoodSlide === 'first' ? seafoodSearch : seafoodList}
-            alt="seafood-project"
-          />
-          <div>
-            <FaChevronRight
-              className="RightCarouselArrow"
-              onClick={() => {
-                setSeafoodSlide('second')
-              }}
-            />
-          </div>
-        </div>
-        <div className="ProjectImageIndicator">
-          <div
-            className={
-              seafoodSlide === 'first' ? 'CarouselImageOn' : 'CarouselImageOff'
-            }
-          >
-            <GoPrimitiveDot />
-          </div>
+          <div className="ProjectImageIndicator">
+            <div
+              className={
+                seafoodSlide === 'first'
+                  ? 'CarouselImageOn'
+                  : 'CarouselImageOff'
+              }
+            >
+              <GoPrimitiveDot />
+            </div>
 
-          <div
-            className={
-              seafoodSlide === 'first' ? 'CarouselImageOff' : 'CarouselImageOn'
-            }
-          >
-            <GoPrimitiveDot />
+            <div
+              className={
+                seafoodSlide === 'first'
+                  ? 'CarouselImageOff'
+                  : 'CarouselImageOn'
+              }
+            >
+              <GoPrimitiveDot />
+            </div>
           </div>
         </div>
+
+        <p>
+          Utilizing the fishwatch API to present data on different species of
+          fish including source, population, and a short description of the
+          fish.
+        </p>
       </div>
-
-      <p>
-        Utilizing the fishwatch API to present data on different species of fish
-        including source, population, and a short description of the fish.
-      </p>
       <h3>Tech Used:</h3>
       <ul>
         <li>

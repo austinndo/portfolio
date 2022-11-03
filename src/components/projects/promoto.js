@@ -17,73 +17,81 @@ const Promoto = () => {
   return (
     <div>
       <h2>Promoto</h2>
-      <div className="CarouselContainer">
-        <div className="MyCarousel">
-          <div>
-            <FaChevronLeft
-              className="LeftCarouselArrow"
-              onClick={() => {
-                if (promotoSlide === 'second') {
-                  setPromotoSlide('first')
-                }
-                if (promotoSlide === 'third') {
-                  setPromotoSlide('second')
-                }
-              }}
+      <div div className="ProjectInfoContainer">
+        <div className="CarouselContainer">
+          <div className="MyCarousel">
+            <div className="CarouselArrowContainer">
+              <FaChevronLeft
+                className="LeftCarouselArrow"
+                onClick={() => {
+                  if (promotoSlide === 'second') {
+                    setPromotoSlide('first')
+                  }
+                  if (promotoSlide === 'third') {
+                    setPromotoSlide('second')
+                  }
+                }}
+              />
+            </div>
+            <img
+              src={
+                promotoSlide === 'first'
+                  ? promotoLanding
+                  : promotoSlide === 'second'
+                  ? promotoFeed
+                  : promotoForm
+              }
+              alt="promoto-project"
             />
+            <div className="CarouselArrowContainer">
+              <FaChevronRight
+                className="RightCarouselArrow"
+                onClick={() => {
+                  if (promotoSlide === 'first') {
+                    setPromotoSlide('second')
+                  }
+                  if (promotoSlide === 'second') {
+                    setPromotoSlide('third')
+                  }
+                }}
+              />
+            </div>
           </div>
-          <img
-            src={
-              promotoSlide === 'first'
-                ? promotoLanding
-                : promotoSlide === 'second'
-                ? promotoFeed
-                : promotoForm
-            }
-            alt="promoto-project"
-          />
-          <div>
-            <FaChevronRight
-              className="RightCarouselArrow"
-              onClick={() => {
-                if (promotoSlide === 'first') {
-                  setPromotoSlide('second')
-                }
-                if (promotoSlide === 'second') {
-                  setPromotoSlide('third')
-                }
-              }}
-            />
+          <div className="ProjectImageIndicator">
+            <div
+              className={
+                promotoSlide === 'first'
+                  ? 'CarouselImageOn'
+                  : 'CarouselImageOff'
+              }
+            >
+              <GoPrimitiveDot />
+            </div>
+            <div
+              className={
+                promotoSlide === 'second'
+                  ? 'CarouselImageOn'
+                  : 'CarouselImageOff'
+              }
+            >
+              <GoPrimitiveDot />
+            </div>
+            <div
+              className={
+                promotoSlide === 'third'
+                  ? 'CarouselImageOn'
+                  : 'CarouselImageOff'
+              }
+            >
+              <GoPrimitiveDot />
+            </div>
           </div>
         </div>
-        <div className="ProjectImageIndicator">
-          <div
-            className={
-              promotoSlide === 'first' ? 'CarouselImageOn' : 'CarouselImageOff'
-            }
-          >
-            <GoPrimitiveDot />
-          </div>
-          <div
-            className={
-              promotoSlide === 'second' ? 'CarouselImageOn' : 'CarouselImageOff'
-            }
-          >
-            <GoPrimitiveDot />
-          </div>
-          <div
-            className={
-              promotoSlide === 'third' ? 'CarouselImageOn' : 'CarouselImageOff'
-            }
-          >
-            <GoPrimitiveDot />
-          </div>
-        </div>
+        <p>
+          Full-stack MERN app that allows users to share and post content about
+          their favorite artist or genre.
+        </p>
       </div>
-      <p>
-        Full-stack MERN app that allows users to share and post content about
-        their favorite artist or genre.
-      </p>
       <h3>Tech Used:</h3>
       <ul>
         <li>

@@ -130,13 +130,27 @@ ul {
   max-width: 30vw;
 }
 
-.CarouselContainer {
+.ProjectInfoContainer {
+  display: flex;
+  flex-direction: row;
+}
 
+.ProjectInfoContainer p {
+  margin-left: 2vw;
+}
+.CarouselContainer {
+  display: flex;
+  flex-direction: column;
 }
 
 .MyCarousel {
   display: flex;
   flex-direction: row;
+}
+
+.CarouselArrowContainer {
+  display: flex;
+  align-items: center;
 }
 
 .LeftCarouselArrow, .RightCarouselArrow {
@@ -146,6 +160,7 @@ ul {
 .ProjectImageIndicator {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .CarouselImageOff {
