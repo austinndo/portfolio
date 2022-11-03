@@ -8,6 +8,7 @@ import {
 } from 'react-devicons'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import { GoPrimitiveDot } from 'react-icons/go'
+import { MdOutlineLaunch } from 'react-icons/md'
 import { useState } from 'react'
 
 const Rabido = () => {
@@ -15,8 +16,8 @@ const Rabido = () => {
 
   return (
     <div>
-      <h2>Rabido</h2>
-      <div div className="ProjectInfoContainer">
+      <h2 className="ProjectTitle">Rabido</h2>
+      <div div className="ProjectPicAndParaContainer">
         <div className="CarouselContainer">
           <div className="MyCarousel">
             <div className="CarouselArrowContainer">
@@ -58,34 +59,38 @@ const Rabido = () => {
             </div>
           </div>
         </div>
-        <p>
+        <p className="ProjectDescriptionA">
           Website that connects freelancers offering a variety of services with
           businesses and individuals.{' '}
         </p>
       </div>
-      <h3>Tech Used:</h3>
-      <ul>
-        <li>
-          <ReactOriginalIcon /> <PostgresqlOriginalIcon />{' '}
-          <ExpressOriginalIcon />
-          <NodejsOriginalIcon />
-        </li>
-      </ul>
-      <div className="ProjectLinks">
-        <a
-          href="https://rabido.herokuapp.com/feed"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Rabido Live Site
-        </a>
-        <a
-          href="https://github.com/phicov/Rabido"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub Repo
-        </a>
+      <div className="ProjectTechandLinks">
+        <div className="ProjectLinks">
+          <a
+            href="https://rabido.herokuapp.com/feed"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Live Site <MdOutlineLaunch />
+          </a>
+          <a
+            href="https://github.com/phicov/Rabido"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub Repo <MdOutlineLaunch />
+          </a>
+        </div>
+        <div>
+          <h4 className="ProjectTechTitle">Tech Used:</h4>
+          <ul>
+            <li className="ProjectDevIcons">
+              <ReactOriginalIcon /> <PostgresqlOriginalIcon />{' '}
+              <ExpressOriginalIcon />
+              <NodejsOriginalIcon />
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   )

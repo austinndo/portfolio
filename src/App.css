@@ -10,6 +10,9 @@ a {
 
 a:hover {
   cursor: pointer;
+  justify-content: space-between;
+  text-decoration: none;
+  color: white
 }
 
 ul {
@@ -130,14 +133,26 @@ ul {
   max-width: 30vw;
 }
 
-.ProjectInfoContainer {
+.ProjectTitle {
+  margin-top: 8vh;
+  margin-bottom: 4vh;
+}
+
+.ProjectPicAndParaContainer {
   display: flex;
   flex-direction: row;
 }
 
-.ProjectInfoContainer p {
-  margin-left: 2vw;
+.ProjectDescriptionA {
+  margin-left: 4vw;
+  max-width: 800px;
 }
+
+.ProjectDescriptionB {
+  margin-right: 4vw;
+  max-width: 800px
+}
+
 .CarouselContainer {
   display: flex;
   flex-direction: column;
@@ -146,6 +161,11 @@ ul {
 .MyCarousel {
   display: flex;
   flex-direction: row;
+}
+
+.MyCarousel img {
+  max-width: 300px;
+  max-height: 300px;
 }
 
 .CarouselArrowContainer {
@@ -167,12 +187,42 @@ ul {
   opacity: 0.5;
 }
 
-.ProjectLinks {
+.ProjectTechandLinks {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
+.ProjectTechTitle {
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+
+.ProjectDevIcons {
+  width: 15vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ProjectLinks {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+}
+
+.ProjectLinks a {
+  text-decoration: none;
+  color: white
+}
+ 
+.ProjectLinks a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: white
+}
+
 .email-link:hover {
   cursor: pointer;
+  color: white;
 }

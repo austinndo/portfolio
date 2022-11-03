@@ -9,6 +9,7 @@ import {
 } from 'react-devicons'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import { GoPrimitiveDot } from 'react-icons/go'
+import { MdOutlineLaunch } from 'react-icons/md'
 import { useState } from 'react'
 
 const Promoto = () => {
@@ -16,8 +17,12 @@ const Promoto = () => {
 
   return (
     <div>
-      <h2>Promoto</h2>
-      <div div className="ProjectInfoContainer">
+      <h2 className="ProjectTitle">Promoto</h2>
+      <div div className="ProjectPicAndParaContainer">
+        <p className="ProjectDescriptionB">
+          Full-stack MERN app that allows users to share and post content about
+          their favorite artist or genre.
+        </p>
         <div className="CarouselContainer">
           <div className="MyCarousel">
             <div className="CarouselArrowContainer">
@@ -87,34 +92,34 @@ const Promoto = () => {
             </div>
           </div>
         </div>
-        <p>
-          Full-stack MERN app that allows users to share and post content about
-          their favorite artist or genre.
-        </p>
       </div>
-      <h3>Tech Used:</h3>
-      <ul>
-        <li>
-          <ReactOriginalIcon /> <MongodbOriginalIcon /> <ExpressOriginalIcon />
-          <NodejsOriginalIcon />
-        </li>
-      </ul>
-      <div className="ProjectLinks">
-        <a
-          href="https://promoto.herokuapp.com/promoto"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Live Site
-        </a>
-        <a
-          href="https://github.com/austinndo/promoto"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub Repo
-        </a>
-        <br></br>
+      <div className="ProjectTechandLinks">
+        <div>
+          <h4 className="ProjectTechTitle">Tech Used:</h4>
+          <ul>
+            <li className="ProjectDevIcons">
+              <ReactOriginalIcon /> <MongodbOriginalIcon />
+              <ExpressOriginalIcon />
+              <NodejsOriginalIcon />
+            </li>
+          </ul>
+        </div>
+        <div className="ProjectLinks">
+          <a
+            href="https://promoto.herokuapp.com/promoto"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Live Site <MdOutlineLaunch />
+          </a>
+          <a
+            href="https://github.com/austinndo/promoto"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub Repo <MdOutlineLaunch />
+          </a>
+        </div>
       </div>
     </div>
   )
