@@ -1,3 +1,4 @@
+import resume from '../assets/Austin_Do_Resume.docx.pdf'
 import { LinkedinOriginalIcon, GithubOriginalIcon } from 'react-devicons'
 
 const ContactSection = ({ id }) => {
@@ -35,6 +36,10 @@ const ContactSection = ({ id }) => {
             </a>
           </li>
         </ul>
+        <h3>Resume</h3>
+        <a href={resume} download>
+          Download Here
+        </a>
       </div>
     </div>
   )

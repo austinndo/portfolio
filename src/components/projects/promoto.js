@@ -121,7 +121,9 @@ const Promoto = () => {
           </a>
         </div>
       </div>
-      <div className="ProjectDivider"></div>
+      <div className="ProjectDividerContainer">
+        <div className="ProjectDivider"></div>
+      </div>
     </div>
   )
 }

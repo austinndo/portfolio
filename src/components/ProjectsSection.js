@@ -6,7 +6,7 @@ const ProjectsSection = ({ id }) => {
   return (
     <div className="SectionContent" id={id}>
       <div className="ProjectsSection">
-        <h1>Projects</h1>
+        <h2 className="ProjectsHeader">Projects</h2>
 
         <Rabido />
         <Promoto />

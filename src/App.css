@@ -88,6 +88,10 @@ ul {
   font-size: 2.5vh;
 }
 
+.AboutSection h2 {
+  text-decoration: underline;
+}
+
 .AboutSection span {
   font-weight: bold;
 }
@@ -125,12 +129,17 @@ ul {
   flex-direction: column;
   justify-content: center;
   margin-right: 6vw;
+  margin-top: 6vh;
 }
 
 /********************  Projects *********************/
 
 .ProjectsSection img {
   max-width: 30vw;
+}
+
+.ProjectsHeader {
+  text-decoration: underline;
 }
 
 .ProjectTitle {
@@ -261,12 +270,17 @@ ul {
   color: white
 }
 
+.ProjectDividerContainer {
+  display: flex;
+  justify-content: center;
+}
+
 .ProjectDivider {
   margin-top: 4vh;
   width: 68vw;
   height: 2vh;
   border-bottom: solid white;
-  opacity: 0.50;
+  opacity: 0.20;
 }
 
 .email-link:hover {
@@ -275,6 +289,10 @@ ul {
 }
 
 /********************  Contact *********************/
+
+.ContactSection h2 {
+  text-decoration: underline;
+}
 
 .ContactLinks a {
   text-decoration: none;
