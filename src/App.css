@@ -354,17 +354,14 @@ ul {
     font-family: 'Montserrat', sans-serif;
   }
   
-.ContactSection, .IntroSection {
+  .ContactSection, .IntroSection {
     height: 95vh;
   }
   
   .SectionContent {
     margin: 0 auto;
-    margin-left: 12vw;
-    margin-right: 8vw;
     padding: 20px;
     color: white;
-    font-size:x-large;
   }
   
   /********************  Navbar *********************/
@@ -406,9 +403,18 @@ ul {
   
   /********************  Intro Section *********************/
   
+  .IntroSection {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12vw;
+  }
+
   .IntroParagraph {
     margin-top: 8vh;
     font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .IntroSection h2 {
@@ -429,45 +435,44 @@ ul {
   
   .AboutSection h2 {
     text-decoration: underline;
+    display: flex;
+    justify-content: center;
   }
   
   .AboutSection span {
     font-weight: bold;
   }
   
+  .AboutSection {
+    display: flex;
+    flex-direction: column;
+  }
+
   .AboutSplitOne {
     display: flex;
     flex-direction: column-reverse;
-
-  }
-  
-  .AboutImageContainer {
-    width: 50%;
+    align-items: center;
   }
   
   .AboutImage {
     display: flex;
     justify-content: center;
+    margin-top: -5vh;
+    margin-bottom: 10vh;
   }
   
   .AboutImage img {
-    width: clamp(100px, 200px, 300px);
+    width: 140px;
     border: solid black;
     border-width: 1vh;
-    box-shadow: 20px 20px 20px 20px blanchedalmond;
-  }
-  
-  .AboutParagraphOne {
-    width: 50%;
+    box-shadow: 5px 5px 5px 5px blanchedalmond;
   }
   
   .AboutSplitTwo {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 6vw;
-    margin-top: 6vh;
-  }
+  } 
   
   /********************  Projects *********************/
   
