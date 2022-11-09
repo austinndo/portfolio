@@ -334,7 +334,7 @@ ul {
   a {
     justify-content: space-between;
     text-decoration: none;
-    color: purple
+    color: white
   } 
   
   a:hover {
@@ -350,19 +350,19 @@ ul {
   
   .Portfolio {
     margin: 0 auto;
-    background-color: orange;
+    background-color: rgba(0, 128, 128, 0.632);
     font-family: 'Montserrat', sans-serif;
   }
   
-  .AboutSection, .ContactSection, .IntroSection {
-    height: 95vh
+.ContactSection, .IntroSection {
+    height: 95vh;
   }
   
   .SectionContent {
     margin: 0 auto;
-    margin-left: 17vw;
+    margin-left: 12vw;
     margin-right: 8vw;
-    padding: 40px;
+    padding: 20px;
     color: white;
     font-size:x-large;
   }
@@ -385,7 +385,7 @@ ul {
     padding: 0rem 3rem;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     height: 100%;
     color: white
@@ -396,7 +396,7 @@ ul {
     margin-left: 2rem;
     color: white;
     text-decoration: none;
-    font-size: larger;
+    font-size: smaller;
   }
   
   .NavbarItem:hover {
@@ -408,17 +408,23 @@ ul {
   
   .IntroParagraph {
     margin-top: 8vh;
-    font-size: 2.8vh;
+    font-size: 18px;
   }
   
   .IntroSection h2 {
-    font-size: 3vh;
+    font-size: 20px;
+  }
+  
+  .IntroResume {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
   }
   
   /********************  About Section *********************/
   
   .AboutSection p {
-    font-size: 2.5vh;
+    font-size: 18px;
   }
   
   .AboutSection h2 {
@@ -431,9 +437,8 @@ ul {
   
   .AboutSplitOne {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 8vh;
+    flex-direction: column-reverse;
+
   }
   
   .AboutImageContainer {
@@ -451,7 +456,6 @@ ul {
     border-width: 1vh;
     box-shadow: 20px 20px 20px 20px blanchedalmond;
   }
-  
   
   .AboutParagraphOne {
     width: 50%;

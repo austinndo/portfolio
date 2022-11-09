@@ -13,7 +13,7 @@ const Navbar = () => {
           offset={-70}
           duration={280}
         >
-          Austin Do
+          Home
         </Link>
         <Link
           className="NavbarItem"

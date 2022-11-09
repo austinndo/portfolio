@@ -16,10 +16,12 @@ const IntroSection = ({ id }) => {
           </p>
         </div>
 
-        <h3>Resume</h3>
-        <a href={resume} download>
-          Download Here
-        </a>
+        <div className="IntroResume">
+          <h2>Resume</h2>
+          <a href={resume} download>
+            Download Here
+          </a>
+        </div>
       </div>
     </div>
   )
