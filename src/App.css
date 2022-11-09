@@ -428,9 +428,15 @@ ul {
   }
   
   /********************  About Section *********************/
-  
+
+  .AboutSection {
+    height: fit-content;
+    margin-bottom: 8vh;
+  }
+
   .AboutSection p {
     font-size: 18px;
+    margin: 0 8vw 0 8vw;
   }
   
   .AboutSection h2 {
@@ -443,22 +449,21 @@ ul {
     font-weight: bold;
   }
   
-  .AboutSection {
-    display: flex;
-    flex-direction: column;
-  }
-
   .AboutSplitOne {
     display: flex;
     flex-direction: column-reverse;
-    align-items: center;
+    justify-content: space-between;
+    margin-top: 2vh;
+  }
+  
+  .AboutImageContainer {
+    width: 100%;
   }
   
   .AboutImage {
     display: flex;
     justify-content: center;
-    margin-top: -5vh;
-    margin-bottom: 10vh;
+    margin: 2vh 0 4vh 0;
   }
   
   .AboutImage img {
@@ -467,12 +472,18 @@ ul {
     border-width: 1vh;
     box-shadow: 5px 5px 5px 5px blanchedalmond;
   }
+
+  .AboutParagraphOne {
+    width: 100%;
+  }
   
   .AboutSplitTwo {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  } 
+    margin-right: 2vw;
+    margin-top: 2vh;
+  }
   
   /********************  Projects *********************/
   
