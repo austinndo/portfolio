@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
-
 a {
   justify-content: space-between;
   text-decoration: none;
@@ -296,11 +295,368 @@ ul {
 
 .ContactLinks a {
   text-decoration: none;
-  color: white
+  color: white;
 }
  
 .ContactLinks a:hover {
   cursor: pointer;
   text-decoration: none;
   color: white
+}
+
+.ContactEmailContainer {
+  display: flex;
+  flex-direction: row;
+  margin-left: 3vw;
+}
+
+.email-link {
+  margin-left: 1rem;
+}
+
+.ContactSocialsContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3vw;
+}
+
+.ContactResumeContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3vw;
+}
+
+/**********************************************************/
+/********************  Mobile Styling *********************/
+/**********************************************************/
+
+@media screen and (max-width:600px) {
+  a {
+    justify-content: space-between;
+    text-decoration: none;
+    color: purple
+  } 
+  
+  a:hover {
+    cursor: pointer;
+    justify-content: space-between;
+    text-decoration: none;
+    color: white
+  }
+  
+  ul {
+    list-style: none;
+  } 
+  
+  .Portfolio {
+    margin: 0 auto;
+    background-color: orange;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .AboutSection, .ContactSection, .IntroSection {
+    height: 95vh
+  }
+  
+  .SectionContent {
+    margin: 0 auto;
+    margin-left: 17vw;
+    margin-right: 8vw;
+    padding: 40px;
+    color: white;
+    font-size:x-large;
+  }
+  
+  /********************  Navbar *********************/
+  
+  .Navbar {
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 10vh;
+    z-index: 1000;
+    box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
+    color: white;
+  }
+  
+  .NavbarContent {
+    max-width: 900px;
+    padding: 0rem 3rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    color: white
+  }
+  
+  .NavbarItem {
+    display: inline;
+    margin-left: 2rem;
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+  }
+  
+  .NavbarItem:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  
+  /********************  Intro Section *********************/
+  
+  .IntroParagraph {
+    margin-top: 8vh;
+    font-size: 2.8vh;
+  }
+  
+  .IntroSection h2 {
+    font-size: 3vh;
+  }
+  
+  /********************  About Section *********************/
+  
+  .AboutSection p {
+    font-size: 2.5vh;
+  }
+  
+  .AboutSection h2 {
+    text-decoration: underline;
+  }
+  
+  .AboutSection span {
+    font-weight: bold;
+  }
+  
+  .AboutSplitOne {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 8vh;
+  }
+  
+  .AboutImageContainer {
+    width: 50%;
+  }
+  
+  .AboutImage {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .AboutImage img {
+    width: clamp(100px, 200px, 300px);
+    border: solid black;
+    border-width: 1vh;
+    box-shadow: 20px 20px 20px 20px blanchedalmond;
+  }
+  
+  
+  .AboutParagraphOne {
+    width: 50%;
+  }
+  
+  .AboutSplitTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 6vw;
+    margin-top: 6vh;
+  }
+  
+  /********************  Projects *********************/
+  
+  .ProjectsSection img {
+    max-width: 30vw;
+  }
+  
+  .ProjectsHeader {
+    text-decoration: underline;
+  }
+  
+  .ProjectTitle {
+    margin-top: 8vh;
+    margin-bottom: 6vh;
+  }
+  
+  .ProjectPicAndParaContainer {
+    display: flex;
+    flex-direction: row;
+    min-height: 300px;
+  }
+  
+  .ProjectDescriptionA {
+    margin-left: 4vw;
+    max-width: 800px;
+    font-size: 2.8vh;
+  }
+  
+  .ProjectDescriptionB {
+    margin-right: 4vw;
+    max-width: 800px;
+    font-size: 2.8vh;
+  }
+  
+  .CarouselContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .MyCarousel {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .MyCarousel img {
+    min-height: 200px;
+    max-height: 300px;
+  }
+  
+  .CarouselArrowContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .LeftCarouselArrow {
+    cursor: pointer;
+    margin-right: 2vw;
+  }
+  
+  .RightCarouselArrow {
+    cursor: pointer;
+    margin-left: 2vw;
+  }
+  
+  .ProjectImageIndicator {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .CarouselImageOff {
+    opacity: 0.5;
+  }
+  
+  .ProjectTechandLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 4vh;
+  }
+  
+  .ProjectTechTitle {
+    margin-bottom: 2vh;
+  }
+  
+  .ProjectDevIconsA {
+    width: 15vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 4vw;
+  }
+  
+  .ProjectDevIconsB {
+    width: 15vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 4vw;
+  }
+  
+  .ProjectLinksA {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    font-size: 2.8vh;
+    margin-left: 3vw;
+  }
+  
+  .ProjectLinksA a {
+    text-decoration: none;
+    color: white
+  }
+   
+  .ProjectLinksA a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: white
+  }
+  
+  .ProjectLinksB {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    font-size: 2.8vh;
+    margin-right: 3vw;
+  }
+  
+  .ProjectLinksB a {
+    text-decoration: none;
+    color: white
+  }
+   
+  .ProjectLinksB a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: white
+  }
+  
+  .ProjectDividerContainer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .ProjectDivider {
+    margin-top: 4vh;
+    width: 68vw;
+    height: 2vh;
+    border-bottom: solid white;
+    opacity: 0.20;
+  }
+  
+  .email-link:hover {
+    cursor: pointer;
+    color: white;
+  }
+  
+  /********************  Contact *********************/
+  
+  .ContactSection h2 {
+    text-decoration: underline;
+  }
+  
+  .ContactLinks a {
+    text-decoration: none;
+    color: white;
+  }
+   
+  .ContactLinks a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: white
+  }
+  
+  .ContactEmailContainer {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3vw;
+  }
+  
+  .email-link {
+    margin-left: 1rem;
+  }
+  
+  .ContactSocialsContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3vw;
+  }
+  
+  .ContactResumeContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3vw;
+  }
 }

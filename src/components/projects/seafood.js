@@ -90,8 +90,8 @@ const Seafood = () => {
           <h5 className="ProjectTechTitle">Tech Used:</h5>
           <ul>
             <li className="ProjectDevIconsA">
-              <JavascriptOriginalIcon /> <Html5OriginalIcon />{' '}
-              <Css3OriginalIcon />
+              <JavascriptOriginalIcon size={28} />{' '}
+              <Html5OriginalIcon size={28} /> <Css3OriginalIcon size={28} />
             </li>
           </ul>
         </div>

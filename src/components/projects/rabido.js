@@ -86,9 +86,10 @@ const Rabido = () => {
           <h5 className="ProjectTechTitle">Tech Used:</h5>
           <ul>
             <li className="ProjectDevIconsA">
-              <ReactOriginalIcon /> <PostgresqlOriginalIcon />{' '}
-              <ExpressOriginalIcon />
-              <NodejsOriginalIcon />
+              <ReactOriginalIcon size={28} />{' '}
+              <PostgresqlOriginalIcon size={28} />{' '}
+              <ExpressOriginalIcon size={28} />
+              <NodejsOriginalIcon size={28} />
             </li>
           </ul>
         </div>
