@@ -71,6 +71,9 @@ ul {
 .NavbarItem:hover {
   color: rgb(255, 255, 255);
   cursor: pointer;
+  transition-duration: 0.2s;
+  animation: ease-in-out;
+  transform: scale(1.2);
 }
 
 /********************  Intro Section *********************/
@@ -308,11 +311,6 @@ ul {
   opacity: 0.20;
 }
 
-.email-link:hover {
-  cursor: pointer;
-  color: white;
-}
-
 /********************  Contact *********************/
 
 .ContactTitle {
@@ -324,17 +322,31 @@ ul {
   text-decoration: underline;
 }
 
+.ContactEmailContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+
+.email-link:hover {
+  cursor: pointer;
+  color: white;
+  transition-duration: 0.2s;
+  animation: ease-in-out;
+  transform: scale(1.4);
+}
+
+.email-text {
+  font-size: 2.5vh;
+}
+
 .ContactLinks {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  font-size: 16px;
-  margin-top: 4vh;
-}
-
-.ContactLinks li {
-  margin: 4vh 0 4vh 0;
+  justify-content: space-evenly;
+  margin-top: -6vh;
 }
 
 .ContactLinks a {
@@ -345,7 +357,10 @@ ul {
 .ContactLinks a:hover {
   cursor: pointer;
   text-decoration: none;
-  color: white
+  color: white;
+  transition-duration: 0.2s;
+  animation: ease-in-out;
+  transform: scale(1.4);
 }
 
 .ContactLinkContainer {
@@ -359,20 +374,11 @@ ul {
   margin-top: 4vh;
 }
 
-.email-link {
-  margin-left: 1rem;
-}
-
-.ContactSocialsContainer {
-  display: flex;
-  flex-direction: column;
-  margin-left: 3vw;
-}
-
-.ContactResumeContent {
+.ContactSocialsContainer p {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 /**********************************************************/
@@ -720,14 +726,10 @@ ul {
   
   .ContactLinks {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
     font-size: 16px;
-    margin-top: 4vh;
-  }
-
-  .ContactLinks li {
-    margin: 4vh 0 4vh 0;
   }
 
   .ContactLinks a {
@@ -745,21 +747,16 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 2vh 0 6vh 0;
   }
   
-  .email-link {
-    margin-left: 1rem;
-  }
-  
-  .ContactSocialsContainer {
-    display: flex;
-    flex-direction: column;
-    margin-left: 3vw;
-  }
-
-  .ContactResumeContent {
+  .ContactSocialsContainer p {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .email-text {
+    font-size: 12px;
   }
 }
