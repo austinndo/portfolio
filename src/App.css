@@ -140,8 +140,6 @@ ul {
 
 .AboutImage img {
   width: clamp(100px, 200px, 300px);
-  border: solid black;
-  border-width: 1vh;
   box-shadow: 20px 20px 20px 20px blanchedalmond;
 }
 
@@ -541,9 +539,9 @@ ul {
   
   .AboutImage img {
     width: 140px;
-    border: solid black;
-    border-width: 1vh;
-    box-shadow: 5px 5px 5px 5px blanchedalmond;
+    border: solid dimgray;
+    border-width: 2px;
+    box-shadow: 6px 2px 2px 2px rgb(225, 223, 220);
   }
 
   .AboutParagraphOne {
