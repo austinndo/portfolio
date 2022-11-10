@@ -4,7 +4,9 @@ const AboutSection = ({ id }) => {
   return (
     <div className="SectionContent" id={id}>
       <div className="AboutSection">
-        <h2>About Me</h2>
+        <span className="AboutTitle">
+          <p>About Me</p>
+        </span>
         <div className="AboutSplitOne">
           <div className="AboutParagraphOne">
             <p>

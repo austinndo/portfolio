@@ -80,6 +80,29 @@ ul {
   font-size: 2.8vh;
 }
 
+.IntroSection span {
+  font-weight: bold;
+}
+
+.IntroResumeContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  text-decoration: none;
+  color: white;
+}
+
+.IntroResumeContent {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  margin-top: 4vh;
+}
+
+.IntroResumeContainer a {
+  text-decoration: none;
+  color: white;
+}
 
 /********************  About Section *********************/
 
@@ -87,8 +110,9 @@ ul {
   font-size: 2.5vh;
 }
 
-.AboutSection h2 {
-  text-decoration: underline;
+.AboutTitle p {
+  font-size: 4vh;
+  font-weight: bold;
 }
 
 .AboutSection span {
@@ -138,12 +162,15 @@ ul {
 }
 
 .ProjectsHeader {
-  text-decoration: underline;
+  font-weight: bold;
+  font-size: 3.5vh;
 }
 
 .ProjectTitle {
   margin-top: 8vh;
   margin-bottom: 6vh;
+  margin-left: 4vw;
+  font-size: 3vh;
 }
 
 .ProjectPicAndParaContainer {
@@ -160,6 +187,7 @@ ul {
 
 .ProjectDescriptionB {
   margin-right: 4vw;
+  margin-left: 4vw;
   max-width: 800px;
   font-size: 2.8vh;
 }
@@ -247,7 +275,6 @@ ul {
 .ProjectLinksA a:hover {
   cursor: pointer;
   text-decoration: none;
-  color: white
 }
 
 .ProjectLinksB {
@@ -266,7 +293,6 @@ ul {
 .ProjectLinksB a:hover {
   cursor: pointer;
   text-decoration: none;
-  color: white
 }
 
 .ProjectDividerContainer {
@@ -289,8 +315,26 @@ ul {
 
 /********************  Contact *********************/
 
+.ContactTitle {
+  font-weight: bold;
+  font-size: 4vh;
+}
+
 .ContactSection h2 {
   text-decoration: underline;
+}
+
+.ContactLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  margin-top: 4vh;
+}
+
+.ContactLinks li {
+  margin: 4vh 0 4vh 0;
 }
 
 .ContactLinks a {
@@ -304,10 +348,15 @@ ul {
   color: white
 }
 
-.ContactEmailContainer {
+.ContactLinkContainer {
   display: flex;
-  flex-direction: row;
-  margin-left: 3vw;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8vh;
+}
+
+.ContactLinkContainer p{
+  margin-top: 4vh;
 }
 
 .email-link {
@@ -320,10 +369,10 @@ ul {
   margin-left: 3vw;
 }
 
-.ContactResumeContainer {
+.ContactResumeContent {
   display: flex;
   flex-direction: column;
-  margin-left: 3vw;
+  align-items: center;
 }
 
 /**********************************************************/
@@ -420,11 +469,24 @@ ul {
   .IntroSection h2 {
     font-size: 20px;
   }
+
+  .IntroSection span {
+    font-weight: bold;
+  }
   
-  .IntroResume {
+  .IntroResumeContainer {
     display: flex;
     flex-direction: column;
     margin-top: 80px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .IntroResumeContent {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    margin-top: 4vh;
   }
   
   /********************  About Section *********************/
@@ -437,6 +499,11 @@ ul {
   .AboutSection p {
     font-size: 18px;
     margin: 0 8vw 0 8vw;
+  }
+
+  .AboutTitle p {
+    font-size: 3vh;
+    font-weight: bold;
   }
   
   .AboutSection h2 {
@@ -492,12 +559,14 @@ ul {
   }
   
   .ProjectsHeader {
-    text-decoration: underline;
+    font-weight: bold;
+    font-size: 3vh;
   }
   
   .ProjectTitle {
     margin-top: 8vh;
     margin-bottom: 6vh;
+    margin-left: 4vw;
   }
   
   .ProjectPicAndParaContainer {
@@ -649,6 +718,18 @@ ul {
     text-decoration: underline;
   }
   
+  .ContactLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    margin-top: 4vh;
+  }
+
+  .ContactLinks li {
+    margin: 4vh 0 4vh 0;
+  }
+
   .ContactLinks a {
     text-decoration: none;
     color: white;
@@ -662,8 +743,8 @@ ul {
   
   .ContactEmailContainer {
     display: flex;
-    flex-direction: row;
-    margin-left: 3vw;
+    flex-direction: column;
+    align-items: center;
   }
   
   .email-link {
@@ -675,10 +756,10 @@ ul {
     flex-direction: column;
     margin-left: 3vw;
   }
-  
-  .ContactResumeContainer {
+
+  .ContactResumeContent {
     display: flex;
     flex-direction: column;
-    margin-left: 3vw;
+    align-items: center;
   }
 }

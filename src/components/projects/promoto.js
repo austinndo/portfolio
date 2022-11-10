@@ -98,7 +98,8 @@ const Promoto = () => {
           <h5 className="ProjectTechTitle">Tech Used:</h5>
           <ul>
             <li className="ProjectDevIconsB">
-              <ReactOriginalIcon size={28} /> <MongodbOriginalIcon size={28} />
+              <ReactOriginalIcon size={28} />
+              <MongodbOriginalIcon size={28} />
               <ExpressOriginalIcon size={28} />
               <NodejsOriginalIcon size={28} />
             </li>
