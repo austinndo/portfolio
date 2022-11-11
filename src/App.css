@@ -20,7 +20,8 @@ ul {
 
 .Portfolio {
   margin: 0 auto;
-  background-color: rgba(0, 128, 128, 0.632);
+  background: rgb(24,130,226);
+  background: linear-gradient(168deg, rgba(24,130,226,1) 0%, rgba(72,72,228,1) 39%, rgba(130,83,201,1) 68%);
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -40,14 +41,13 @@ ul {
 /********************  Navbar *********************/
 
 .Navbar {
-  background-color: black;
+  background-color:rgba(222, 222, 222, 0.8);
   position: sticky;
   top: 0px;
   width: 100%;
   height: 10vh;
   z-index: 1000;
   box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
-  color: white;
 }
 
 .NavbarContent {
@@ -64,12 +64,12 @@ ul {
 .NavbarItem {
   display: inline;
   margin-left: 2rem;
-  color: white;
+  color: rgb(48, 48, 48);
   text-decoration: none;
 }
 
 .NavbarItem:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(48, 48, 48);
   cursor: pointer;
   transition-duration: 0.2s;
   animation: ease-in-out;
@@ -100,6 +100,16 @@ ul {
   flex-direction: column;
   font-size: 18px;
   margin-top: 4vh;
+  width: fit-content;
+}
+
+.IntroResumeContent a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  transition-duration: 0.2s;
+  animation: ease-in-out;
+  transform: scale(1.2);
 }
 
 .IntroResumeContainer a {
@@ -140,7 +150,7 @@ ul {
 
 .AboutImage img {
   width: clamp(100px, 200px, 300px);
-  box-shadow: 20px 20px 20px 20px blanchedalmond;
+  box-shadow: 14px 12px 12px 0 rgba(222, 222, 222, 0.8);
 }
 
 
@@ -218,9 +228,23 @@ ul {
   margin-right: 2vw;
 }
 
+.LeftCarouselArrow:hover {
+  cursor: pointer;
+  transition-duration: 0.2s;
+  animation: ease-in-out;
+  transform: scale(1.4);
+}
+
 .RightCarouselArrow {
   cursor: pointer;
   margin-left: 2vw;
+}
+
+.RightCarouselArrow:hover {
+  cursor: pointer;
+  transition-duration: 0.2s;
+  animation: ease-in-out;
+  transform: scale(1.4);
 }
 
 .ProjectImageIndicator {
@@ -276,6 +300,10 @@ ul {
 .ProjectLinksA a:hover {
   cursor: pointer;
   text-decoration: none;
+  color: white;
+  transition-duration: 0.2s;
+  animation: ease-in-out;
+  transform: scale(1.2);
 }
 
 .ProjectLinksB {
@@ -294,6 +322,10 @@ ul {
 .ProjectLinksB a:hover {
   cursor: pointer;
   text-decoration: none;
+  color: white;
+  transition-duration: 0.2s;
+  animation: ease-in-out;
+  transform: scale(1.2);
 }
 
 .ProjectDividerContainer {
