@@ -1,4 +1,4 @@
-import resume from '../assets/Austin_Do_Resume.docx.pdf'
+import resume from '../assets/Austin_Do_Resume.pdf'
 import { HiDocumentDownload } from 'react-icons/hi'
 import { MdOutlineLaunch } from 'react-icons/md'
 
