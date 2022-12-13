@@ -106,13 +106,16 @@ const Promoto = () => {
           </ul>
         </div>
         <div className="ProjectLinksB">
-          <a
+          {/* <a
             href="https://promoto.herokuapp.com/promoto"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Live Site <MdOutlineLaunch />
-          </a>
+            Live Site Currently Moving to New Platform
+          </a> */}
+          <h3 className="temporaryHeroku">
+            Live Site Moving to Another Platform
+          </h3>
           <a
             href="https://github.com/austinndo/promoto"
             target="_blank"

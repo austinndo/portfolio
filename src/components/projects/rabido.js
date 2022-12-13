@@ -67,13 +67,16 @@ const Rabido = () => {
 
       <div className="ProjectTechandLinks">
         <div className="ProjectLinksA">
-          <a
+          {/* <a
             href="https://rabido.herokuapp.com/feed"
             target="_blank"
             rel="noopener noreferrer"
           >
             Live Site <MdOutlineLaunch />
-          </a>
+          </a> */}
+          <h3 className="temporaryHeroku">
+            Live Site Moving to Another Platform
+          </h3>
           <a
             href="https://github.com/phicov/Rabido"
             target="_blank"
