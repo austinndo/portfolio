@@ -74,9 +74,9 @@ const Rabido = () => {
           >
             Live Site <MdOutlineLaunch />
           </a> */}
-          <h3 className="temporaryHeroku">
+          <h5 className="temporaryHeroku">
             Live Site Moving to Another Platform
-          </h3>
+          </h5>
           <a
             href="https://github.com/phicov/Rabido"
             target="_blank"

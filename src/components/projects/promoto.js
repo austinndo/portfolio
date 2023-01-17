@@ -113,9 +113,9 @@ const Promoto = () => {
           >
             Live Site Currently Moving to New Platform
           </a> */}
-          <h3 className="temporaryHeroku">
+          <h5 className="temporaryHeroku">
             Live Site Moving to Another Platform
-          </h3>
+          </h5>
           <a
             href="https://github.com/austinndo/promoto"
             target="_blank"

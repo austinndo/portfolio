@@ -6,21 +6,20 @@ const ContactSection = ({ id }) => {
     <div className="SectionContent" id={id}>
       <div className="ContactSection">
         <p className="ContactTitle">Contact Me</p>
-        <div className="ContactEmailContainer">
-          <p>Send me a message!</p>
-          <p
-            className="email-link"
-            onClick={() => {
-              window.location = 'mailto:austinndo@gmail.com'
-            }}
-          >
-            <MdOutlineEmail size={42} />
-          </p>
-          {/* <p className="email-text">austinndo@gmail.com</p> */}
-        </div>
         <div className="ContactSocialsContainer">
-          <p>Connect with me:</p>
           <ul className="ContactLinks">
+            <li>
+              <div className="ContactLinkContainer">
+                <p
+                  className="email-link"
+                  onClick={() => {
+                    window.location = 'mailto:austinndo@gmail.com'
+                  }}
+                >
+                  <MdOutlineEmail size={42} />
+                </p>
+              </div>
+            </li>
             <li>
               <div className="ContactLinkContainer">
                 <a
