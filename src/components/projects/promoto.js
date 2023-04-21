@@ -19,10 +19,17 @@ const Promoto = () => {
     <div className="ProjectComponent">
       <h2 className="ProjectTitle">Promoto</h2>
       <div div className="ProjectPicAndParaContainer">
-        <p className="ProjectDescriptionB">
-          Full-stack MERN app that allows users to share and post content about
-          their favorite artist or genre.
-        </p>
+        <div className="ProjectDescriptionB">
+          <p className="tempFontSize">
+            Full-stack MERN app that allows users to share and post content
+            about their favorite artist or genre.
+          </p>
+          <p className="tempFontSize">
+            *Database previously supported by Heroku. No create/edit
+            capabilities for now. Enter site by clicking the play button without
+            any login or password.
+          </p>
+        </div>
         <div className="CarouselContainer">
           <div className="MyCarousel">
             <div className="CarouselArrowContainer">
@@ -106,16 +113,14 @@ const Promoto = () => {
           </ul>
         </div>
         <div className="ProjectLinksB">
-          {/* <a
-            href="https://promoto.herokuapp.com/promoto"
+          <a
+            href="https://promoto2.netlify.app"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Live Site Currently Moving to New Platform
-          </a> */}
-          <h5 className="temporaryHeroku">
-            Live Site Moving to Another Platform
-          </h5>
+            Promoto v2 <MdOutlineLaunch />
+          </a>
+
           <a
             href="https://github.com/austinndo/promoto"
             target="_blank"
