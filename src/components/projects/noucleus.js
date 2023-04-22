@@ -118,9 +118,6 @@ const Noucleus = () => {
           </a>
         </div>
       </div>
-      <div className="ProjectDividerContainer">
-        <div className="ProjectDivider"></div>
-      </div>
     </div>
   )
 }

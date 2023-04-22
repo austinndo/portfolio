@@ -8,10 +8,21 @@ const ProjectsSection = ({ id }) => {
     <div className="SectionContent" id={id}>
       <div className="ProjectsSection">
         <p className="ProjectsHeader">Projects</p>
-
+        <div className="ProjectDividerContainer">
+          <div className="ProjectDivider"></div>
+        </div>
         <Noucleus />
+        <div className="ProjectDividerContainer">
+          <div className="ProjectDivider"></div>
+        </div>
         <Promoto />
+        <div className="ProjectDividerContainer">
+          <div className="ProjectDivider"></div>
+        </div>
         <Seafood />
+        <div className="ProjectDividerContainer">
+          <div className="ProjectDivider"></div>
+        </div>
       </div>
     </div>
   )
