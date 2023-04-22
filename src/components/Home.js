@@ -1,8 +1,8 @@
-import Navbar from '../components/Navbar'
-import IntroSection from '../components/IntroSection'
-import AboutSection from '../components/AboutSection'
-import ContactSection from '../components/ContactSection'
-import ProjectsSection from '../components/ProjectsSection'
+import Navbar from './Navbar'
+import IntroSection from './IntroSection'
+import AboutSection from './AboutSection'
+import ContactSection from './ContactSection'
+import ProjectsSection from './ProjectsSection'
 
 const Home = () => {
   return (
