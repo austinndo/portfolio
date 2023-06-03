@@ -9,7 +9,7 @@ a {
   justify-content: space-between;
   text-decoration: none;
   color: white
-} 
+}
 
 a:hover {
   cursor: pointer;
@@ -20,7 +20,7 @@ a:hover {
 
 ul {
   list-style: none;
-} 
+}
 
 .tempFontSize {
   font-size: 70%;
@@ -28,12 +28,14 @@ ul {
 
 .Portfolio {
   margin: 0 auto;
-  background: rgb(24,130,226);
-  background: linear-gradient(168deg, rgba(24,130,226,1) 0%, rgba(72,72,228,1) 39%, rgba(130,83,201,1) 68%);
+  background: rgb(24, 130, 226);
+  background: linear-gradient(168deg, rgba(24, 130, 226, 1) 0%, rgba(72, 72, 228, 1) 39%, rgba(130, 83, 201, 1) 68%);
   font-family: 'Montserrat', sans-serif;
 }
 
-.AboutSection, .ContactSection, .IntroSection {
+.AboutSection,
+.ContactSection,
+.IntroSection {
   height: 95vh
 }
 
@@ -43,13 +45,13 @@ ul {
   margin-right: 8vw;
   padding: 40px;
   color: white;
-  font-size:x-large;
+  font-size: x-large;
 }
 
 /********************  Navbar *********************/
 
 .Navbar {
-  background-color:rgba(222, 222, 222, 0.8);
+  background-color: rgba(222, 222, 222, 0.8);
   position: sticky;
   top: 0px;
   width: 100%;
@@ -126,6 +128,9 @@ ul {
 }
 
 /********************  About Section *********************/
+.AboutSection {
+  margin-bottom: 4vh;
+}
 
 .AboutSection p {
   font-size: 2.5vh;
@@ -172,6 +177,7 @@ ul {
   justify-content: center;
   margin-right: 6vw;
   margin-top: 6vh;
+  margin-bottom: 2vh;
 }
 
 /********************  Projects *********************/
@@ -306,7 +312,7 @@ ul {
   text-decoration: none;
   color: white
 }
- 
+
 .ProjectLinksA a:hover {
   cursor: pointer;
   text-decoration: none;
@@ -328,7 +334,7 @@ ul {
   text-decoration: none;
   color: white
 }
- 
+
 .ProjectLinksB a:hover {
   cursor: pointer;
   text-decoration: none;
@@ -393,7 +399,7 @@ ul {
   text-decoration: none;
   color: white;
 }
- 
+
 .ContactLinks a:hover {
   cursor: pointer;
   text-decoration: none;
@@ -410,7 +416,7 @@ ul {
   margin-top: 8vh;
 }
 
-.ContactLinkContainer p{
+.ContactLinkContainer p {
   margin-top: 4vh;
 }
 
@@ -430,39 +436,40 @@ ul {
     justify-content: space-between;
     text-decoration: none;
     color: white
-  } 
-  
+  }
+
   a:hover {
     cursor: pointer;
     justify-content: space-between;
     text-decoration: none;
     color: white
   }
-  
+
   ul {
     list-style: none;
-  } 
-  
+  }
+
   .Portfolio {
     margin: 0 auto;
     background-color: rgba(0, 128, 128, 0.632);
     font-family: 'Montserrat', sans-serif;
   }
-  
-  .ContactSection, .IntroSection {
+
+  .ContactSection,
+  .IntroSection {
     height: 95vh;
   }
-  
+
   .SectionContent {
     margin: 0 auto;
     padding: 20px;
     color: white;
   }
-  
+
   /********************  Navbar *********************/
-  
+
   .Navbar {
-    background-color:rgba(222, 222, 222, 0.8);
+    background-color: rgba(222, 222, 222, 0.8);
     position: sticky;
     top: 0px;
     width: 100%;
@@ -471,7 +478,7 @@ ul {
     box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
     color: white;
   }
-  
+
   .NavbarContent {
     max-width: 900px;
     padding: 0rem 3rem;
@@ -482,7 +489,7 @@ ul {
     height: 100%;
     color: white
   }
-  
+
   .NavbarItem {
     display: inline;
     margin-left: 2rem;
@@ -490,7 +497,7 @@ ul {
     text-decoration: none;
     font-size: smaller;
   }
-  
+
   .NavbarItem:hover {
     color: rgb(48, 48, 48);
     cursor: pointer;
@@ -498,9 +505,9 @@ ul {
     animation: ease-in-out;
     transform: scale(1.2);
   }
-  
+
   /********************  Intro Section *********************/
-  
+
   .IntroSection {
     display: flex;
     flex-direction: column;
@@ -514,7 +521,7 @@ ul {
     justify-content: center;
     align-items: center;
   }
-  
+
   .IntroSection h2 {
     font-size: 20px;
   }
@@ -522,7 +529,7 @@ ul {
   .IntroSection span {
     font-weight: bold;
   }
-  
+
   .IntroResumeContainer {
     display: flex;
     flex-direction: column;
@@ -537,7 +544,7 @@ ul {
     font-size: 18px;
     margin-top: 4vh;
   }
-  
+
   /********************  About Section *********************/
 
   .AboutSection {
@@ -554,45 +561,45 @@ ul {
     font-size: 3vh;
     font-weight: bold;
   }
-  
+
   .AboutSection h2 {
     text-decoration: underline;
     display: flex;
     justify-content: center;
   }
-  
+
   .AboutSection span {
     font-weight: bold;
   }
-  
+
   .AboutSplitOne {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
     margin-top: 2vh;
   }
-  
+
   .AboutImageContainer {
     width: 100%;
   }
-  
+
   .AboutImage {
     display: flex;
     justify-content: center;
     margin: 2vh 0 4vh 0;
   }
-  
+
   .AboutImage img {
     width: 140px;
     border: solid dimgray;
     border-width: 2px;
-    box-shadow:  6px 6px 8px 2px rgba(222, 222, 222, 0.8);
+    box-shadow: 6px 6px 8px 2px rgba(222, 222, 222, 0.8);
   }
 
   .AboutParagraphOne {
     width: 100%;
   }
-  
+
   .AboutSplitTwo {
     display: flex;
     flex-direction: column;
@@ -600,95 +607,95 @@ ul {
     margin-right: 2vw;
     margin-top: 2vh;
   }
-  
+
   /********************  Projects *********************/
-  
+
   .ProjectsSection img {
     max-width: 80vw;
   }
-  
+
   .ProjectsHeader {
     font-weight: bold;
     font-size: 3vh;
   }
-  
+
   .ProjectTitle {
     margin-top: 8vh;
     margin-bottom: 6vh;
     margin-left: 4vw;
   }
-  
+
   .ProjectPicAndParaContainer {
     display: flex;
     flex-direction: column;
     min-height: 300px;
   }
-  
+
   .ProjectDescriptionA {
     margin-left: 4vw;
     margin-top: 4vh;
     max-width: 800px;
     font-size: 18px;
   }
-  
+
   .ProjectDescriptionB {
     margin-right: 4vw;
     margin-bottom: 4vh;
     max-width: 800px;
     font-size: 18px;
   }
-  
+
   .CarouselContainer {
     display: flex;
     flex-direction: column;
   }
-  
+
   .MyCarousel {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  
+
   .MyCarousel img {
     height: 100%;
   }
-  
+
   .CarouselArrowContainer {
     display: flex;
     align-items: center;
   }
-  
+
   .LeftCarouselArrow {
     cursor: pointer;
     margin-right: 2vw;
   }
-  
+
   .RightCarouselArrow {
     cursor: pointer;
     margin-left: 2vw;
   }
-  
+
   .ProjectImageIndicator {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  
+
   .CarouselImageOff {
     opacity: 0.5;
   }
-  
+
   .ProjectTechandLinks {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 4vh;
   }
-  
+
   .ProjectTechTitle {
     margin-bottom: 2vh;
   }
-  
+
   .ProjectDevIconsA {
     width: 15vw;
     display: flex;
@@ -696,7 +703,7 @@ ul {
     justify-content: space-between;
     margin-right: 4vw;
   }
-  
+
   .ProjectDevIconsB {
     width: 15vw;
     display: flex;
@@ -704,7 +711,7 @@ ul {
     justify-content: space-between;
     margin-left: 4vw;
   }
-  
+
   .ProjectLinksA {
     display: flex;
     flex-direction: column;
@@ -712,18 +719,18 @@ ul {
     font-size: 20px;
     margin-left: 3vw;
   }
-  
+
   .ProjectLinksA a {
     text-decoration: none;
     color: white
   }
-   
+
   .ProjectLinksA a:hover {
     cursor: pointer;
     text-decoration: none;
     color: white
   }
-  
+
   .ProjectLinksB {
     display: flex;
     flex-direction: column;
@@ -731,23 +738,23 @@ ul {
     font-size: 20px;
     margin-right: 3vw;
   }
-  
+
   .ProjectLinksB a {
     text-decoration: none;
     color: white
   }
-   
+
   .ProjectLinksB a:hover {
     cursor: pointer;
     text-decoration: none;
     color: white
   }
-  
+
   .ProjectDividerContainer {
     display: flex;
     justify-content: center;
   }
-  
+
   .ProjectDivider {
     margin-top: 4vh;
     width: 68vw;
@@ -755,18 +762,18 @@ ul {
     border-bottom: solid white;
     opacity: 0.20;
   }
-  
+
   .email-link:hover {
     cursor: pointer;
     color: white;
   }
-  
+
   /********************  Contact *********************/
-  
+
   .ContactSection h2 {
     text-decoration: underline;
   }
-  
+
   .ContactLinks {
     display: flex;
     flex-direction: row;
@@ -779,20 +786,20 @@ ul {
     text-decoration: none;
     color: white;
   }
-   
+
   .ContactLinks a:hover {
     cursor: pointer;
     text-decoration: none;
     color: white
   }
-  
+
   .ContactEmailContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 8vh 0 6vh 0;
   }
-  
+
   .ContactSocialsContainer p {
     display: flex;
     flex-direction: column;
