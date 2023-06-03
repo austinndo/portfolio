@@ -1,7 +1,7 @@
 import palmerHome from '../../assets/palmer-homepage.png'
 import palmerBodyMass from '../../assets/palmer-bodymass.png'
 import palmerFlipper from '../../assets/palmer-flipperlength.png'
-import { ReactOriginalIcon, DjangoOriginalIcon } from 'react-devicons'
+import { DiPython } from 'react-devicons'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import { GoPrimitiveDot } from 'react-icons/go'
 import { MdOutlineLaunch } from 'react-icons/md'
@@ -94,8 +94,7 @@ const Palmer = () => {
           <h5 className="ProjectTechTitle">Tech Used:</h5>
           <ul>
             <li className="ProjectDevIconsB">
-              <ReactOriginalIcon size={28} />
-              <DjangoOriginalIcon size={28} />
+              {/* <DiPython size={28} /> */}
             </li>
           </ul>
         </div>

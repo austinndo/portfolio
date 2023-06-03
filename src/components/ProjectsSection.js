@@ -1,4 +1,5 @@
 // import Rabido from './projects/rabido'
+import Palmer from './projects/palmerpenguins'
 import Noucleus from './projects/noucleus'
 import Promoto from './projects/promoto'
 import Seafood from './projects/seafood'
@@ -8,6 +9,10 @@ const ProjectsSection = ({ id }) => {
     <div className="SectionContent" id={id}>
       <div className="ProjectsSection">
         <p className="ProjectsHeader">Projects</p>
+        <div className="ProjectDividerContainer">
+          <div className="ProjectDivider"></div>
+        </div>
+        <Palmer />
         <div className="ProjectDividerContainer">
           <div className="ProjectDivider"></div>
         </div>
