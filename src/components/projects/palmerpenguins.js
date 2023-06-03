@@ -16,7 +16,7 @@ const Palmer = () => {
       <div div className="ProjectPicAndParaContainer">
         <div className="ProjectDescriptionB">
           <p>
-            Dash app visualizing Palmer penguin data from Kaggle
+            Dash app visualizing Palmer penguin data from Kaggle. Created interactive graphs to view and analyze four qualities (culmen length, culmen depth, flipper length, and body mass) between species, origin (island), and sex.
           </p>
         </div>
         <div className="CarouselContainer">

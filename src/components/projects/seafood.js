@@ -70,6 +70,15 @@ const Seafood = () => {
         </p>
       </div>
       <div className="ProjectTechandLinks">
+      <div className="ProjectTech">
+          <h5 className="ProjectTechTitle">Tech Used:</h5>
+          <ul>
+            <li className="ProjectDevIconsA">
+              <JavascriptOriginalIcon size={28} />{' '}
+              <Html5OriginalIcon size={28} /> <Css3OriginalIcon size={28} />
+            </li>
+          </ul>
+        </div>
         <div className="ProjectLinksA">
           <a
             href="https://sustainable-seafood.surge.sh/"
@@ -85,15 +94,6 @@ const Seafood = () => {
           >
             GitHub Repo <MdOutlineLaunch />
           </a>
-        </div>
-        <div className="ProjectTech">
-          <h5 className="ProjectTechTitle">Tech Used:</h5>
-          <ul>
-            <li className="ProjectDevIconsA">
-              <JavascriptOriginalIcon size={28} />{' '}
-              <Html5OriginalIcon size={28} /> <Css3OriginalIcon size={28} />
-            </li>
-          </ul>
         </div>
       </div>
     </div>

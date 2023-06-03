@@ -14,13 +14,7 @@ const Noucleus = () => {
     <div className="ProjectComponent">
       <h2 className="ProjectTitle">Noucleus</h2>
       <div div className="ProjectPicAndParaContainer">
-        <div className="ProjectDescriptionB">
-          <p>
-            Full stack app that allows users to create a profile, upload sgRNA
-            designs, and visualize data regarding the efficiency of their edits.
-          </p>
-        </div>
-        <div className="CarouselContainer">
+      <div className="CarouselContainer">
           <div className="MyCarousel">
             <div className="CarouselArrowContainer">
               <FaChevronLeft
@@ -89,6 +83,14 @@ const Noucleus = () => {
             </div>
           </div>
         </div>
+
+        <div className="ProjectDescriptionB">
+          <p>
+            Full stack app that allows users to create a profile, upload sgRNA
+            designs, and visualize data regarding the efficiency of their edits.
+          </p>
+        </div>
+       
       </div>
       <div className="ProjectTechandLinks">
         <div className="ProjectTech">
