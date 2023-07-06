@@ -21,7 +21,7 @@ const AboutSection = ({ id }) => {
 
           <div className="AboutImageContainer">
             <div className="AboutImage">
-              <img src={profile_photo} alt="profile_photo" />
+              <img src={profile_photo} id="profilePhoto" alt="profile_photo" />
             </div>
           </div>
         </div>

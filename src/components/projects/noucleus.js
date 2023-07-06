@@ -13,7 +13,7 @@ const Noucleus = () => {
   return (
     <div className="ProjectComponent">
       <h2 className="ProjectTitle">Noucleus</h2>
-      <div div className="ProjectPicAndParaContainer">
+      <div className="ProjectPicAndParaContainer" id="reverseProjectOrder">
       <div className="CarouselContainer">
           <div className="MyCarousel">
             <div className="CarouselArrowContainer">

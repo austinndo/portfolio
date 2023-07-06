@@ -1,4 +1,5 @@
 import './App.css'
+import './App_media_screen.css'
 import { Routes, Route } from 'react-router-dom'
 import Home from './components/Home'
 
