@@ -235,8 +235,9 @@ ul {
 }
 
 .MyCarousel img {
-  min-height: 200px;
-  max-height: 300px;
+  width: 50vw;
+  height: auto;
+  object-fit: cover;
 }
 
 .CarouselArrowContainer {

@@ -235,7 +235,9 @@
   }
 
   .MyCarousel img {
-    height: 100%;
+    width: 70vw;
+    height: auto;
+    object-fit: cover;
   }
 
   .CarouselArrowContainer {

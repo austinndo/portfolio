@@ -1,48 +1,52 @@
-import seafoodSearch from '../../assets/sustainable-seafood-asset1.png'
-import seafoodList from '../../assets/sustainable-seafood-asset2.png'
+import weatherHome from '../../assets/my-weather-asset-1.png'
+import mainCard from '../../assets/my-weather-asset-2.png'
+import forecastCards from '../../assets/my-weather-asset-3.png'
 import {
+  ReactOriginalIcon,
   Html5OriginalIcon,
-  Css3OriginalIcon,
-  JavascriptOriginalIcon
+  Css3OriginalIcon
 } from 'react-devicons'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import { GoPrimitiveDot } from 'react-icons/go'
 import { MdOutlineLaunch } from 'react-icons/md'
 import { useState } from 'react'
 
-const Seafood = () => {
-  const [seafoodSlide, setSeafoodSlide] = useState('first')
+const MyWeather = () => {
+  const [weatherSlide, setWeatherSlide] = useState('first')
 
   return (
     <div className="ProjectComponent">
-      <h2 className="ProjectTitle">Sustainable Seafood</h2>
+      <h2 className="ProjectTitle">My Weather</h2>
       <div className="ProjectPicAndParaContainer" id="reverseProjectOrder">
-        <div className="ProjectDescriptionB">
-          <p>
-          Utilizing the fishwatch API to present data on different species of
-          fish including source, population, and a short description of the
-          fish.
-          </p>
-        </div>
         <div className="CarouselContainer">
           <div className="MyCarousel">
             <div className="CarouselArrowContainer">
               <FaChevronLeft
                 className="LeftCarouselArrow"
                 onClick={() => {
-                  setSeafoodSlide('first')
+                  if (weatherSlide === 'third') {
+                    setWeatherSlide('second')
+                  }
+                  else {
+                    setWeatherSlide('first')
+                  }
                 }}
               />
             </div>
             <img
-              src={seafoodSlide === 'first' ? seafoodSearch : seafoodList}
-              alt="seafood-project"
+              src={weatherSlide === 'first' ?  weatherHome : weatherSlide === 'second' ? mainCard : forecastCards}
+              alt="weather-project"
             />
             <div className="CarouselArrowContainer">
               <FaChevronRight
                 className="RightCarouselArrow"
                 onClick={() => {
-                  setSeafoodSlide('second')
+                  if (weatherSlide === 'first') {
+                    setWeatherSlide('second')
+                  }
+                  if (weatherSlide === 'second') {
+                    setWeatherSlide('third')
+                  }
                 }}
               />
             </div>
@@ -50,7 +54,7 @@ const Seafood = () => {
           <div className="ProjectImageIndicator">
             <div
               className={
-                seafoodSlide === 'first'
+                weatherSlide === 'first'
                   ? 'CarouselImageOn'
                   : 'CarouselImageOff'
               }
@@ -60,36 +64,48 @@ const Seafood = () => {
 
             <div
               className={
-                seafoodSlide === 'first'
-                  ? 'CarouselImageOff'
-                  : 'CarouselImageOn'
+                weatherSlide === 'second'
+                  ? 'CarouselImageOn'
+                  : 'CarouselImageOff'
+              }
+            >
+              <GoPrimitiveDot />
+            </div>
+            <div
+              className={
+                weatherSlide === 'third'
+                  ? 'CarouselImageOn'
+                  : 'CarouselImageOff'
               }
             >
               <GoPrimitiveDot />
             </div>
           </div>
         </div>
+        <p className="ProjectDescriptionA">
+        Simple React app to pull data from a weather api. Determines user's location using react-geolocated. Provides current weather and a three day forecast. User can click on the forecast day for more information including UV index, chance of rain, etc.
+        </p>
       </div>
       <div className="ProjectTechandLinks">
       <div className="ProjectTech">
           <h5 className="ProjectTechTitle">Tech Used:</h5>
           <ul>
-            <li className="ProjectDevIconsB">
-              <JavascriptOriginalIcon size={28} />{' '}
+            <li className="ProjectDevIconsA">
+              <ReactOriginalIcon size={28} />{' '}
               <Html5OriginalIcon size={28} /> <Css3OriginalIcon size={28} />
             </li>
           </ul>
         </div>
-        <div className="ProjectLinksB">
+        <div className="ProjectLinksA">
           <a
-            href="https://sustainable-seafood.surge.sh/"
+            href="https://my-weather-3.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
             Live Site <MdOutlineLaunch />
           </a>
           <a
-            href="https://github.com/austinndo/sustainable_seafood"
+            href="https://github.com/austinndo/react_weather_app"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -101,4 +117,4 @@ const Seafood = () => {
   )
 }
 
-export default Seafood
+export default MyWeather
